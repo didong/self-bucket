@@ -25,10 +25,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://msedgedriver.azureedge.net/103.0.1264.71/edgedriver_win64.zip"
+                "url": "https://msedgedriver.azureedge.net/$version/edgedriver_win64.zip"
             },
             "32bit": {
-                "url": "https://msedgedriver.azureedge.net/103.0.1264.71/edgedriver_win32.zip"
+                "url": "https://msedgedriver.azureedge.net/$version/edgedriver_win32.zip"
             }
         }
     }
