@@ -1,0 +1,15 @@
+{
+    "version": "latest",
+    "description": "apifox测试工具",
+    "homepage": "https://www.apifox.cn/",
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn.apifox.cn/download/Apifox-windows-latest.zip"
+        },
+        "32bit": {
+            "url": "https://cdn.apifox.cn/download/Apifox-win32-latest.zip"
+        }
+    },
+    "bin": "Apifox.exe"
+}
+
