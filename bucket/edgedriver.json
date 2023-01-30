@@ -1,5 +1,5 @@
 {
-    "version": "108.0.1462.54",
+    "version": "109.0.1518.70",
     "description": "Close the loop on your developer cycle by automating testing of your website in Microsoft Edge (Chromium).",
     "homepage": "https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver",
     "license": {
@@ -9,17 +9,17 @@
     "notes": "For legacy (EdgeHTML) version, see 'versions/edgedriver-legacy'.",
     "architecture": {
         "64bit": {
-            "url": "https://msedgedriver.azureedge.net/108.0.1462.54/edgedriver_win64.zip",
-            "hash": "009e201cd3fe9af671a42cd0c3383fc2ff7f79d9c80e12442e640ae450b0e5a1"
+            "url": "https://msedgedriver.azureedge.net/109.0.1518.70/edgedriver_win64.zip",
+            "hash": "1e54ea8c346472c4d104e881890e9da82805eca8178c511b27a03c8524274e55"
         },
         "32bit": {
-            "url": "https://msedgedriver.azureedge.net/108.0.1462.54/edgedriver_win32.zip",
-            "hash": "ee2d62baefbe30edb680180e151fb7bb83d9a0f15c1a59c019a1b7360076cc9a"
+            "url": "https://msedgedriver.azureedge.net/109.0.1518.70/edgedriver_win32.zip",
+            "hash": "cdd3454331e5ccef697f47e5e76166fbb5e42916b76d42c293a4bd2039097693"
         }
     },
     "bin": "msedgedriver.exe",
     "checkver": {
-        "url": "https://msedgedriver.azureedge.net/LATEST_CANARY",
+        "url": "C:/Users/didong/Downloads/LATEST_CANARY",
         "regex": "([\\d.]+)"
     },
     "autoupdate": {
