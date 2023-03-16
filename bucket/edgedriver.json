@@ -1,35 +1,29 @@
 {
-    "version": "110.0.1587.57",
-    "description": "Close the loop on your developer cycle by automating testing of your website in Microsoft Edge (Chromium).",
-    "homepage": "https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver",
+    "##": "语雀, checkver|https://www.yuque.com/api/docs/changelog?book_id=1840275|$.data.content|Yuque-([\\d.]+).exe",
+    "version": "2.5.5.1046",
+    "description": "[语雀] - 一款文档与知识管理工具。语雀使用了\"结构化知识库管理\"，形式上类似书籍的目录",
     "license": {
-        "identifier": "Freeware",
-        "url": "https://az813057.vo.msecnd.net/webdriver/license.html"
+        "identifier": "EULA",
+        "url": "https://www.yuque.com/terms"
     },
-    "notes": "For legacy (EdgeHTML) version, see 'versions/edgedriver-legacy'.",
-    "architecture": {
-        "64bit": {
-            "url": "https://msedgedriver.azureedge.net/110.0.1587.57/edgedriver_win64.zip",
-            "hash": "a75e217883bd14aad162dee509f46671f76e2781250266abf55abb5db50f3591"
-        },
-        "32bit": {
-            "url": "https://msedgedriver.azureedge.net/110.0.1587.57/edgedriver_win32.zip",
-            "hash": "a12fd100fce6d7163e1e0b0eefc55134c2f384cb52f807878980c4f282af5499"
-        }
-    },
-    "bin": "msedgedriver.exe",
+    "homepage": "https://www.yuque.com",
+    "url": "https://app.nlark.com/yuque-desktop/2.5.5.1046/BJ5156f223b6c94d9d8462d118b9e96408/Yuque-2.5.5.1046.exe#/dl.7z",
+    "hash": "890a59f3e740bab2dc48d17322e5e8d71253030ffd74810791a4a65122ee60a4",
+    "pre_install": [
+      "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" $dir",
+      "Remove-Item \"$dir\\`$*\" -Force -Recurse"
+    ],
+    "shortcuts": [
+        [
+            "语雀.exe",
+            "语雀"
+        ]
+    ],
     "checkver": {
-        "url": "F:/work/self-bucket/vsersion/msedgedriver",
-        "regex": "([\\d.]+)"
+        "url": "https://www.yuque.com/install/desktop",
+        "regex": "windowsDownLoadURL%22%3A%22https%3A%2F%2Fapp\\.nlark\\.com%2Fyuque-desktop%2F([\\d.]+)%2F(?<hash>\\w+)%2FYuque-[\\d.]+\\.exe"
     },
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://msedgedriver.azureedge.net/$version/edgedriver_win64.zip"
-            },
-            "32bit": {
-                "url": "https://msedgedriver.azureedge.net/$version/edgedriver_win32.zip"
-            }
-        }
+        "url": "https://app.nlark.com/yuque-desktop/$version/$matchHash/Yuque-$version.exe#/dl.7z"
     }
 }
